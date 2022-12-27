@@ -1,0 +1,32 @@
+// anythinf that wont have its's own separate file"
+
+
+
+//Margin & padding classes
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+
+    .m-#{$space} {
+        padding: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        padding: #{$space}rem 0;
+    }
+
+    .mx-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}
